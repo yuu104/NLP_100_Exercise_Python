@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "nlp100"
+version = "0.1.0"
+description = ""
+authors = ["yuu <yusei8171@gmail.com>"]
+readme = "README.md"
+packages = [{include = "nlp100", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+mypy = "^1.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
