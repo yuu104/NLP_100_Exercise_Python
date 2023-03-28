@@ -1,8 +1,9 @@
 import sys
 import re
+from pprint import pprint
 from No_25 import main_25
 
-if __name__ == '__main__':
+def main_26() -> dict[str, str]:
   basic_info = main_25()
 
   if not basic_info:
@@ -13,6 +14,8 @@ if __name__ == '__main__':
     if res:
       replaced_text = res.group().replace("'", '')
       basic_info[key] = replaced_text
-      print(basic_info[key])
   
-  print(basic_info)
+  return basic_info
+
+if __name__ == '__main__':
+  pprint(main_26(), sort_dicts=False)
