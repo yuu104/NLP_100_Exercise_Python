@@ -8,7 +8,7 @@ class Morpheme(TypedDict):
   pos: str
   pos1: str
 
-if __name__ == '__main__':
+def main_30() -> List[List[Morpheme]]:
   path = os.path.dirname(os.path.abspath(__file__))
   with open(f'{path}/../../mecab/neko.txt.mecab', 'r') as f:
     morphemic_sentence: List[List[Morpheme]] = []
@@ -29,6 +29,11 @@ if __name__ == '__main__':
       feature = node[1].split(',')
       morpheme: Morpheme = {'surface': node[0], 'base': feature[6], 'pos': feature[0], 'pos1': feature[1]}
       morphemes.append(morpheme)
-    
-    print(len(morphemic_sentence))
-    pprint(morphemic_sentence[:3])
+  
+  return morphemic_sentence
+
+if __name__ == '__main__':
+  morphemic_sentence = main_30()
+  
+  print(len(morphemic_sentence))
+  pprint(morphemic_sentence[:3])
