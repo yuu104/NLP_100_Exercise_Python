@@ -18,7 +18,7 @@ def main_33():
       if first_morpheme['pos'] == '名詞' and second_morpheme['base'] == 'の' and third_morpheme['pos'] == '名詞':
         noun_phrase.append(first_morpheme['base'] + second_morpheme['base'] + third_morpheme['base'])
         
-  # print(noun_phrase)
+  print(noun_phrase)
 
 if __name__ == '__main__':
   main_33()
