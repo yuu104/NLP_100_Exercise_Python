@@ -1,7 +1,6 @@
 from matplotlib import pyplot
+import japanize_matplotlib
 from No_35 import main_35
-
-pyplot.rcParams['font.family'] = 'Meiryo'
 
 def main_36():
   freq_words = main_35()
