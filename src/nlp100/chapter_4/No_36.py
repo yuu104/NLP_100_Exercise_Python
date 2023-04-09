@@ -1,6 +1,6 @@
 from matplotlib import pyplot
 import japanize_matplotlib
-from No_35 import main_35
+from .No_35 import main_35
 
 def main_36():
   freq_words = main_35()

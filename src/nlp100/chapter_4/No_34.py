@@ -1,4 +1,4 @@
-from No_30 import main_30
+from .No_30 import main_30
 from pprint import pprint
 from typing import List
 

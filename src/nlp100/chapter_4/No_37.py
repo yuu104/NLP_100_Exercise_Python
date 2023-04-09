@@ -1,4 +1,4 @@
-from No_30 import main_30
+from .No_30 import main_30
 import collections
 from pprint import pprint
 from matplotlib import pyplot

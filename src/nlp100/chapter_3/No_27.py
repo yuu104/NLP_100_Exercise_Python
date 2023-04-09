@@ -1,6 +1,6 @@
 import re
 from pprint import pprint
-from No_26 import main_26
+from .No_26 import main_26
 
 def main_27() -> dict[str, str]:
   basic_info = main_26()

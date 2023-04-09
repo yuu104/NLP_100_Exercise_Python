@@ -1,7 +1,7 @@
 import sys
 import re
 from pprint import pprint
-from No_25 import main_25
+from .No_25 import main_25
 
 def main_26() -> dict[str, str]:
   basic_info = main_25()

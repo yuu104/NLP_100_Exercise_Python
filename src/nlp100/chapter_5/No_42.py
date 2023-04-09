@@ -1,4 +1,4 @@
-from No_41 import main_41
+from .No_41 import main_41
 
 def main_42():
   sentences = main_41()

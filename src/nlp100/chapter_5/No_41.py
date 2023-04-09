@@ -1,7 +1,7 @@
 import os
 from typing import List
 from pprint import pprint
-from No_40 import Morph
+from .No_40 import Morph
 
 class Chunk:
   def __init__(self, morphs: List[Morph], dst: int, srcs: List[int]) -> None:
