@@ -1,5 +1,4 @@
 import os
-from typing import List
 from No_41 import main_41
 
 def main_47():

@@ -1,6 +1,5 @@
 import os
 from typing import List
-from pprint import pprint
 from No_40 import Morph
 
 class Chunk:
