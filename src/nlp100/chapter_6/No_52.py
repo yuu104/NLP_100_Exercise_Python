@@ -11,10 +11,11 @@ def main_52():
   x = df.drop('category', axis=1).values
   y = df['category'].to_numpy()
 
-  clf = LogisticRegression()
+  clf = LogisticRegression(max_iter=10000)
   clf.fit(x, y)
 
   dump(clf, f'{current_path}/../../NewsAggregatorDataset/logistic_model.joblib')
 
 if __name__ == '__main__':
   main_52()
+  print("終了")
